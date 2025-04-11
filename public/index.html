@@ -34,7 +34,7 @@
             </div>
 <!-- dropback -->
             <div id="mobile-menu-2"
-              class="hidden fixed top-0 right-0 z-50 h-full w-3/4 bg-orange-400 py-8 backdrop-blur-sm flex-col justify-start items-start md:static md:w-auto md:order-1 md:flex-row md:items-center md:flex">
+              class="hidden fixed top-0 right-0 z-50 h-full w-3/4 bg-gray-500/20 py-8 backdrop-blur-xl flex-col justify-start items-start md:static md:w-auto md:order-1 md:flex-row md:items-center md:flex">
 <!-- bg-newblue-900/20 -->
                 <div class="w-full flex justify-end pr-8">
                   <button data-collapse-toggle="mobile-menu-2" type="button" class="p-2 inline-flex items-center text-sm text-white rounded-lg lg:hidden hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-200 cursor-pointer self-end md:hidden" aria-controls="mobile-menu-2" aria-expanded="false">
@@ -81,20 +81,21 @@
         </div>
     </nav>
   </header>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!
-
-  Explore
-  
+  <main class="p-6">
+    <div class="hero text-white flex flex-col justify-center items-center">
+      <div class="hero-text text-center">
+        <h1 class="font-barlow-condensed text-3xl tracking-[4px] uppercase">So, you want to travel to
+          <span class="block py-6 font-bellefair text-[9rem] tracking-normal">Space</span>
+        </h1>
+        <p class="text-newblue-300 font-barlow">Let’s face it; if you want to go to space, you might as well genuinely go to 
+        outer space and not hover kind of on the edge of it. Well sit back, and relax 
+        because we’ll give you a truly out of this world experience!</p>
+      </div>
+      <div class="hero-cta pt-20">
+        <button class="uppercase border-transparent text-black bg-white w-52 h-52 rounded-full text-3xl  transition-all duration-300 hover:shadow-[0_0_60px_20px_rgba(255,255,255,0.4)] cursor-pointer font-bellefair">Explore</button>
+      </div>
+    </div>
+  </main>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   <script src="script.js"></script>
 </body>
