@@ -7,9 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-400: oklch(70.4% 0.191 22.216);
-    --color-red-800: oklch(44.4% 0.177 26.899);
-    --color-pink-500: oklch(65.6% 0.241 354.308);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-800: oklch(27.8% 0.033 256.848);
@@ -28,15 +25,10 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
-    --text-5xl: 3rem;
-    --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
-    --tracking-tighter: -0.05em;
     --tracking-normal: 0em;
     --tracking-wide: 0.025em;
     --tracking-widest: 0.1em;
@@ -427,9 +419,6 @@
   .bg-\[url\(\'\.\.\/assets\/destination\/background-destination-mobile\.jpg\'\)\] {
     background-image: url('../assets/destination/background-destination-mobile.jpg');
   }
-  .bg-\[url\(\'\/assets\/destination\/background-destination-mobile\.jpg\'\)\] {
-    background-image: url('/assets/destination/background-destination-mobile.jpg');
-  }
   .bg-\[url\(\'\/public\/assets\/home\/background-home-mobile\.jpg\'\)\] {
     background-image: url('/public/assets/home/background-home-mobile.jpg');
   }
@@ -459,6 +448,12 @@
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
   }
   .pt-12 {
     padding-top: calc(var(--spacing) * 12);
@@ -763,11 +758,6 @@
       background-image: url('../assets/destination/background-destination-tablet.jpg');
     }
   }
-  .md\:bg-\[url\(\'\/assets\/destination\/background-destination-tablet\.jpg\'\)\] {
-    @media (width >= 48rem) {
-      background-image: url('/assets/destination/background-destination-tablet.jpg');
-    }
-  }
   .md\:bg-\[url\(\'\/public\/assets\/home\/background-home-tablet\.jpg\'\)\] {
     @media (width >= 48rem) {
       background-image: url('/public/assets/home/background-home-tablet.jpg');
@@ -930,11 +920,6 @@
   .lg\:bg-\[url\(\'\.\.\/assets\/destination\/background-destination-desktop\.jpg\'\)\] {
     @media (width >= 64rem) {
       background-image: url('../assets/destination/background-destination-desktop.jpg');
-    }
-  }
-  .lg\:bg-\[url\(\'\/assets\/destination\/background-destination-desktop\.jpg\'\)\] {
-    @media (width >= 64rem) {
-      background-image: url('/assets/destination/background-destination-desktop.jpg');
     }
   }
   .lg\:bg-\[url\(\'\/public\/assets\/home\/background-home-desktop\.jpg\'\)\] {
