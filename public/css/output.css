@@ -7,8 +7,10 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-200: oklch(88.5% 0.062 18.334);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-black: #000;
     --color-white: #fff;
@@ -235,6 +237,9 @@
   .z-150 {
     z-index: 150;
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .my-8 {
     margin-block: calc(var(--spacing) * 8);
   }
@@ -265,6 +270,10 @@
   .table {
     display: table;
   }
+  .size-3 {
+    width: calc(var(--spacing) * 3);
+    height: calc(var(--spacing) * 3);
+  }
   .size-40 {
     width: calc(var(--spacing) * 40);
     height: calc(var(--spacing) * 40);
@@ -272,6 +281,9 @@
   .size-56 {
     width: calc(var(--spacing) * 56);
     height: calc(var(--spacing) * 56);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
   }
   .h-6 {
     height: calc(var(--spacing) * 6);
@@ -294,8 +306,20 @@
   .w-3\/4 {
     width: calc(3/4 * 100%);
   }
+  .w-3\/5 {
+    width: calc(3/5 * 100%);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
   .w-6 {
     width: calc(var(--spacing) * 6);
+  }
+  .w-40 {
+    width: calc(var(--spacing) * 40);
+  }
+  .w-60 {
+    width: calc(var(--spacing) * 60);
   }
   .w-full {
     width: 100%;
@@ -395,6 +419,9 @@
       border-color: color-mix(in oklab, var(--color-white) 50%, transparent);
     }
   }
+  .bg-gray-400 {
+    background-color: var(--color-gray-400);
+  }
   .bg-newblue-900 {
     background-color: var(--color-newblue-900);
   }
@@ -416,11 +443,41 @@
       background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
     }
   }
+  .bg-\[url\(\'\.\.\/assets\/crew\/background-crew-mobile\.jpg\'\)\] {
+    background-image: url('../assets/crew/background-crew-mobile.jpg');
+  }
   .bg-\[url\(\'\.\.\/assets\/destination\/background-destination-mobile\.jpg\'\)\] {
     background-image: url('../assets/destination/background-destination-mobile.jpg');
   }
   .bg-\[url\(\'\/public\/assets\/home\/background-home-mobile\.jpg\'\)\] {
     background-image: url('/public/assets/home/background-home-mobile.jpg');
+  }
+  .\[mask-image\:linear-gradient\(to_bottom\,black\,transparent\)\] {
+    mask-image: linear-gradient(to bottom,black,transparent);
+  }
+  .\[mask-image\:linear-gradient\(to_top\,black\,transparent\)\] {
+    mask-image: linear-gradient(to top,black,transparent);
+  }
+  .\[mask-image\:linear-gradient\(to_top\,transparent\,black\)\] {
+    mask-image: linear-gradient(to top,transparent,black);
+  }
+  .\[mask-image\:linear-gradient\(to_top\,transparent\,white\)\] {
+    mask-image: linear-gradient(to top,transparent,white);
+  }
+  .mask-\[linear-gradient\(to_top\,transparent\,black\)\] {
+    mask-image: linear-gradient(to top,transparent,black);
+  }
+  .mask-\[linear-gradient\(to_top\,transparent_0\%\,black_10\%\)\] {
+    mask-image: linear-gradient(to top,transparent 0%,black 10%);
+  }
+  .mask-\[linear-gradient\(to_top\,transparent_0\%\,black_40\%\)\] {
+    mask-image: linear-gradient(to top,transparent 0%,black 40%);
+  }
+  .mask-\[linear-gradient\(to_top\,transparent_0\%\,black_50\%\)\] {
+    mask-image: linear-gradient(to top,transparent 0%,black 50%);
+  }
+  .mask-\[linear-gradient\(to_top\,transparent_0\%\,black_80\%\)\] {
+    mask-image: linear-gradient(to top,transparent 0%,black 80%);
   }
   .bg-cover {
     background-size: cover;
@@ -452,11 +509,32 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
-  .py-12 {
-    padding-block: calc(var(--spacing) * 12);
+  .py-16 {
+    padding-block: calc(var(--spacing) * 16);
+  }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
+  .pt-8 {
+    padding-top: calc(var(--spacing) * 8);
+  }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
   }
   .pt-12 {
     padding-top: calc(var(--spacing) * 12);
+  }
+  .pt-14 {
+    padding-top: calc(var(--spacing) * 14);
+  }
+  .pt-16 {
+    padding-top: calc(var(--spacing) * 16);
+  }
+  .pt-22 {
+    padding-top: calc(var(--spacing) * 22);
+  }
+  .pt-24 {
+    padding-top: calc(var(--spacing) * 24);
   }
   .pr-4 {
     padding-right: calc(var(--spacing) * 4);
@@ -466,6 +544,9 @@
   }
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
+  }
+  .pb-8 {
+    padding-bottom: calc(var(--spacing) * 8);
   }
   .text-center {
     text-align: center;
@@ -543,6 +624,9 @@
   }
   .text-newblue-300 {
     color: var(--color-newblue-300);
+  }
+  .text-red-200 {
+    color: var(--color-red-200);
   }
   .text-white {
     color: var(--color-white);
@@ -643,6 +727,13 @@
     &:hover {
       @media (hover: hover) {
         border-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:bg-gray-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-600);
       }
     }
   }
@@ -751,6 +842,11 @@
     @media (width >= 48rem) {
       border-right-style: var(--tw-border-style);
       border-right-width: 0px;
+    }
+  }
+  .md\:bg-\[url\(\'\.\.\/assets\/crew\/background-crew-tablet\.jpg\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('../assets/crew/background-crew-tablet.jpg');
     }
   }
   .md\:bg-\[url\(\'\.\.\/assets\/destination\/background-destination-tablet\.jpg\'\)\] {
@@ -917,14 +1013,39 @@
       justify-content: space-between;
     }
   }
+  .lg\:bg-\[url\(\'\.\.\/assets\/crew\/background-crew-desktop\.jpg\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('../assets/crew/background-crew-desktop.jpg');
+    }
+  }
   .lg\:bg-\[url\(\'\.\.\/assets\/destination\/background-destination-desktop\.jpg\'\)\] {
     @media (width >= 64rem) {
       background-image: url('../assets/destination/background-destination-desktop.jpg');
     }
   }
+  .lg\:bg-\[url\(\'\.\/assets\/crew\/background-crew-desktop\.jpg\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('./assets/crew/background-crew-desktop.jpg');
+    }
+  }
+  .lg\:bg-\[url\(\'\/assets\/crew\/background-crew-desktop\.jpg\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('/assets/crew/background-crew-desktop.jpg');
+    }
+  }
   .lg\:bg-\[url\(\'\/public\/assets\/home\/background-home-desktop\.jpg\'\)\] {
     @media (width >= 64rem) {
       background-image: url('/public/assets/home/background-home-desktop.jpg');
+    }
+  }
+  .lg\:bg-\[url\(\'assets\/crew\/background-crew-desktop\.jpg\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('assets/crew/background-crew-desktop.jpg');
+    }
+  }
+  .lg\:bg-\[url\(\'public\/assets\/crew\/background-crew-desktop\.jpg\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('public/assets/crew/background-crew-desktop.jpg');
     }
   }
   .lg\:py-8 {
