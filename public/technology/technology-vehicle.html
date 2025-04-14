@@ -17,9 +17,9 @@
 </head>
 
 <body class="text-lg 
-bg-[url('../assets/destination/background-destination-mobile.jpg')] 
-md:bg-[url('../assets/destination/background-destination-tablet.jpg')] 
-lg:bg-[url('../assets/destination/background-destination-desktop.jpg')] 
+bg-[url('../assets/technology/background-technology-mobile.jpg')] 
+md:bg-[url('../assets/technology/background-technology-tablet.jpg')] 
+lg:bg-[url('../assets/technology/background-technology-desktop.jpg')] 
 bg-no-repeat bg-cover bg-center overflow-x-hidden lg:flex lg:flex-col lg:justify-between">
 
     <header>
@@ -90,7 +90,7 @@ bg-no-repeat bg-cover bg-center overflow-x-hidden lg:flex lg:flex-col lg:justify
                         </li>
                         <li
                             class="me-2 border-r-2 md:border-r-0 border-transparent hover:border-white cursor-pointer relative group ml-8 md:after:absolute md:after:-bottom-8 md:after:left-1/2 md:after:-translate-x-1/2 md:after:h-[3px] md:after:w-full md:after:bg-transparent md:after:transition-colors md:after:duration-300 hover:md:after:bg-gray-400 [aria-current='page']:after:bg-white">
-                            <a href="#" class="flex items-center gap-x-2">
+                            <a href="/public/destination/destination-moon.html" class="flex items-center gap-x-2">
                                 <span class="font-bold">
                                     01
                                 </span> Destination</a>
@@ -116,40 +116,45 @@ bg-no-repeat bg-cover bg-center overflow-x-hidden lg:flex lg:flex-col lg:justify
     </header>
 
     <main
-        class="p-6 md:py-16 md:w-5/6 md:mx-auto overflow-hidden bg-transparent w-full flex flex-col justify-center items-center text-white">
-        <div class="info-crew flex flex-col items-center justify-center">
-            <div class="text-center">
-                <p class="uppercase text-2xl tracking-normal font-barlow-condensed">
-                    <span class="font-bold text-lg text-white/50 pr-4">02</span>meet your crew
-                </p>
-    
-                <h3 id="crew-role" class="uppercase text-center text-lg text-white/50 pt-14 font-bellefair">commander</h3>
-                <h4 id="crew-name" class="uppercase font-bellefair text-2xl">douglas hurley</h4>
-                <p id="crew-bio" class="pt-10 text-newblue-300 font-barlow text-base leading-[180%]">
-                    Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
-                    and former NASA astronaut. He launched into space for the third time as
-                    commander of Crew Dragon Demo-2.
-                </p>
-    
-                <!-- Carousel dots -->
-                <div class="flex justify-center gap-4 pt-12">
-                    <button class="cursor-pointer dot w-4 h-4 rounded-full bg-white" data-index="0"
-                        aria-label="Douglas Hurley"></button>
-                    <button class="cursor-pointer dot w-4 h-4 rounded-full bg-gray-400 hover:bg-gray-600" data-index="1"
-                        aria-label="Mark Shuttleworth"></button>
-                    <button class="cursor-pointer dot w-4 h-4 rounded-full bg-gray-400 hover:bg-gray-600" data-index="2"
-                        aria-label="Victor Glover"></button>
-                    <button class="cursor-pointer dot w-4 h-4 rounded-full bg-gray-400 hover:bg-gray-600" data-index="3"
-                        aria-label="Anousheh Ansari"></button>
-                </div>
-            </div>
-    
-            <!-- Image -->
-            <picture>
-                <source id="crew-img-webp" srcset="../assets/crew/image-douglas-hurley.webp" />
-                <img id="crew-img" src="../assets/crew/image-douglas-hurley.png" alt=""
-                    class="w-3/5 mx-auto pt-14 pb-8 [mask-image:linear-gradient(to_top,transparent,black)]">
+        class="py-6 md:py-16 md:w-5/6 md:mx-auto overflow-hidden bg-transparent w-full flex flex-col justify-center items-center text-white">
+        <div class="technology flex flex-col items-center text-center">
+            <p class="uppercase text-2xl tracking-normal font-barlow-condensed pb-6">
+                <span class="font-bold text-lg text-white/50 pr-4">03</span>space launch 101
+            </p>
+
+            <!-- Imagen -->
+            <picture class="pt-12">
+                <!-- Landscape solo en tablets -->
+                <source id="tech-img-webp" media="(min-width: 768px) and (max-width: 1023px)"
+                    srcset="../assets/technology/image-launch-vehicle-landscape.jpg">
+            
+                <!-- Portrait para mobile y desktop -->
+                <img id="tech-img" src="../assets/technology/image-launch-vehicle-portrait.jpg" alt="Launch Vehicle"
+                    class="w-full max-w-md mx-auto">
             </picture>
+        
+            <!-- Número de navegación -->
+            <div class="flex gap-4 justify-center pt-8">
+                <button class="tech-btn w-10 h-10 rounded-full border border-white text-white/50 cursor-pointer" data-index="0">1</button>
+                <button class="tech-btn w-10 h-10 rounded-full border border-white text-white/50 hover:text-white cursor-pointer"
+                    data-index="1">2</button>
+                <button class="tech-btn w-10 h-10 rounded-full border border-white text-white/50 hover:text-white cursor-pointer"
+                    data-index="2">3</button>
+            </div>
+        
+            <!-- Info -->
+            <div class="info-text pt-12 flex flex-col gap-4">
+                <h3 class="uppercase text-sm text-white/50 font-barlow-condensed">the terminology...</h3>
+                <h4 id="tech-name" class="uppercase text-3xl font-bellefair">launch vehicle</h4>
+                <p id="tech-desc" class="text-newblue-300 font-barlow text-base leading-relaxed px-6 max-w-xl mx-auto">
+                    A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+                    payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+                    WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+                    it's quite an awe-inspiring sight on the launch pad!
+                </p>
+            </div>
+        
+            
         </div>
     
     </main>
@@ -159,21 +164,3 @@ bg-no-repeat bg-cover bg-center overflow-x-hidden lg:flex lg:flex-col lg:justify
     
     </html>
 
-00 Home
-01 Destination
-02 Crew
-03 Technology
-
-03 Space launch 101
-
-1
-2
-3
-
-The terminology...
-Launch vehicle
-
-A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
-payload from Earth's surface to space, usually to Earth orbit or beyond. Our
-WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
-it's quite an awe-inspiring sight on the launch pad!

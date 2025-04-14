@@ -15,6 +15,8 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-md: 28rem;
+    --container-xl: 36rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
@@ -34,6 +36,7 @@
     --tracking-normal: 0em;
     --tracking-wide: 0.025em;
     --tracking-widest: 0.1em;
+    --leading-relaxed: 1.625;
     --radius-lg: 0.5rem;
     --blur-xl: 24px;
     --default-transition-duration: 150ms;
@@ -270,10 +273,6 @@
   .table {
     display: table;
   }
-  .size-3 {
-    width: calc(var(--spacing) * 3);
-    height: calc(var(--spacing) * 3);
-  }
   .size-40 {
     width: calc(var(--spacing) * 40);
     height: calc(var(--spacing) * 40);
@@ -287,6 +286,9 @@
   }
   .h-6 {
     height: calc(var(--spacing) * 6);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
   }
   .h-full {
     height: 100%;
@@ -315,14 +317,17 @@
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
-  .w-40 {
-    width: calc(var(--spacing) * 40);
-  }
-  .w-60 {
-    width: calc(var(--spacing) * 60);
+  .w-10 {
+    width: calc(var(--spacing) * 10);
   }
   .w-full {
     width: 100%;
+  }
+  .max-w-md {
+    max-width: var(--container-md);
+  }
+  .max-w-xl {
+    max-width: var(--container-xl);
   }
   .border-collapse {
     border-collapse: collapse;
@@ -449,35 +454,14 @@
   .bg-\[url\(\'\.\.\/assets\/destination\/background-destination-mobile\.jpg\'\)\] {
     background-image: url('../assets/destination/background-destination-mobile.jpg');
   }
+  .bg-\[url\(\'\.\.\/assets\/technology\/background-technology-mobile\.jpg\'\)\] {
+    background-image: url('../assets/technology/background-technology-mobile.jpg');
+  }
   .bg-\[url\(\'\/public\/assets\/home\/background-home-mobile\.jpg\'\)\] {
     background-image: url('/public/assets/home/background-home-mobile.jpg');
   }
-  .\[mask-image\:linear-gradient\(to_bottom\,black\,transparent\)\] {
-    mask-image: linear-gradient(to bottom,black,transparent);
-  }
-  .\[mask-image\:linear-gradient\(to_top\,black\,transparent\)\] {
-    mask-image: linear-gradient(to top,black,transparent);
-  }
   .\[mask-image\:linear-gradient\(to_top\,transparent\,black\)\] {
     mask-image: linear-gradient(to top,transparent,black);
-  }
-  .\[mask-image\:linear-gradient\(to_top\,transparent\,white\)\] {
-    mask-image: linear-gradient(to top,transparent,white);
-  }
-  .mask-\[linear-gradient\(to_top\,transparent\,black\)\] {
-    mask-image: linear-gradient(to top,transparent,black);
-  }
-  .mask-\[linear-gradient\(to_top\,transparent_0\%\,black_10\%\)\] {
-    mask-image: linear-gradient(to top,transparent 0%,black 10%);
-  }
-  .mask-\[linear-gradient\(to_top\,transparent_0\%\,black_40\%\)\] {
-    mask-image: linear-gradient(to top,transparent 0%,black 40%);
-  }
-  .mask-\[linear-gradient\(to_top\,transparent_0\%\,black_50\%\)\] {
-    mask-image: linear-gradient(to top,transparent 0%,black 50%);
-  }
-  .mask-\[linear-gradient\(to_top\,transparent_0\%\,black_80\%\)\] {
-    mask-image: linear-gradient(to top,transparent 0%,black 80%);
   }
   .bg-cover {
     background-size: cover;
@@ -494,6 +478,9 @@
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
@@ -509,12 +496,6 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
-  .py-16 {
-    padding-block: calc(var(--spacing) * 16);
-  }
-  .pt-6 {
-    padding-top: calc(var(--spacing) * 6);
-  }
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
   }
@@ -529,12 +510,6 @@
   }
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
-  }
-  .pt-22 {
-    padding-top: calc(var(--spacing) * 22);
-  }
-  .pt-24 {
-    padding-top: calc(var(--spacing) * 24);
   }
   .pr-4 {
     padding-right: calc(var(--spacing) * 4);
@@ -595,6 +570,10 @@
     --tw-leading: 180%;
     line-height: 180%;
   }
+  .leading-relaxed {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -624,9 +603,6 @@
   }
   .text-newblue-300 {
     color: var(--color-newblue-300);
-  }
-  .text-red-200 {
-    color: var(--color-red-200);
   }
   .text-white {
     color: var(--color-white);
@@ -744,6 +720,20 @@
       }
     }
   }
+  .hover\:text-black {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-black);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
   .hover\:shadow-\[0_0_60px_20px_rgba\(255\,255\,255\,0\.4\)\] {
     &:hover {
       @media (hover: hover) {
@@ -852,6 +842,11 @@
   .md\:bg-\[url\(\'\.\.\/assets\/destination\/background-destination-tablet\.jpg\'\)\] {
     @media (width >= 48rem) {
       background-image: url('../assets/destination/background-destination-tablet.jpg');
+    }
+  }
+  .md\:bg-\[url\(\'\.\.\/assets\/technology\/background-technology-tablet\.jpg\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('../assets/technology/background-technology-tablet.jpg');
     }
   }
   .md\:bg-\[url\(\'\/public\/assets\/home\/background-home-tablet\.jpg\'\)\] {
@@ -1023,29 +1018,14 @@
       background-image: url('../assets/destination/background-destination-desktop.jpg');
     }
   }
-  .lg\:bg-\[url\(\'\.\/assets\/crew\/background-crew-desktop\.jpg\'\)\] {
+  .lg\:bg-\[url\(\'\.\.\/assets\/technology\/background-technology-desktop\.jpg\'\)\] {
     @media (width >= 64rem) {
-      background-image: url('./assets/crew/background-crew-desktop.jpg');
-    }
-  }
-  .lg\:bg-\[url\(\'\/assets\/crew\/background-crew-desktop\.jpg\'\)\] {
-    @media (width >= 64rem) {
-      background-image: url('/assets/crew/background-crew-desktop.jpg');
+      background-image: url('../assets/technology/background-technology-desktop.jpg');
     }
   }
   .lg\:bg-\[url\(\'\/public\/assets\/home\/background-home-desktop\.jpg\'\)\] {
     @media (width >= 64rem) {
       background-image: url('/public/assets/home/background-home-desktop.jpg');
-    }
-  }
-  .lg\:bg-\[url\(\'assets\/crew\/background-crew-desktop\.jpg\'\)\] {
-    @media (width >= 64rem) {
-      background-image: url('assets/crew/background-crew-desktop.jpg');
-    }
-  }
-  .lg\:bg-\[url\(\'public\/assets\/crew\/background-crew-desktop\.jpg\'\)\] {
-    @media (width >= 64rem) {
-      background-image: url('public/assets/crew/background-crew-desktop.jpg');
     }
   }
   .lg\:py-8 {
