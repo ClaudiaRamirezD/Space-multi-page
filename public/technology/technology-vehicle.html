@@ -20,7 +20,7 @@
 bg-[url('../assets/technology/background-technology-mobile.jpg')] 
 md:bg-[url('../assets/technology/background-technology-tablet.jpg')] 
 lg:bg-[url('../assets/technology/background-technology-desktop.jpg')] 
-bg-no-repeat bg-cover bg-center overflow-x-hidden lg:flex lg:flex-col lg:justify-between">
+bg-no-repeat bg-cover bg-center overflow-x-hidden lg:flex lg:flex-col lg:justify-between h-screen">
 
     <header>
         <nav class="text-white font-barlow-condensed text-base">
@@ -90,7 +90,7 @@ bg-no-repeat bg-cover bg-center overflow-x-hidden lg:flex lg:flex-col lg:justify
                         </li>
                         <li
                             class="me-2 border-r-2 md:border-r-0 border-transparent hover:border-white cursor-pointer relative group ml-8 md:after:absolute md:after:-bottom-8 md:after:left-1/2 md:after:-translate-x-1/2 md:after:h-[3px] md:after:w-full md:after:bg-transparent md:after:transition-colors md:after:duration-300 hover:md:after:bg-gray-400 [aria-current='page']:after:bg-white">
-                            <a href="/public/destination/destination-moon.html" class="flex items-center gap-x-2">
+                            <a href="/public/destination/destination.html" class="flex items-center gap-x-2">
                                 <span class="font-bold">
                                     01
                                 </span> Destination</a>
@@ -116,21 +116,21 @@ bg-no-repeat bg-cover bg-center overflow-x-hidden lg:flex lg:flex-col lg:justify
     </header>
 
     <main
-        class="py-6 md:py-16 md:w-5/6 md:mx-auto overflow-hidden bg-transparent w-full flex flex-col justify-center items-center text-white">
-        <div class="technology flex flex-col items-center text-center">
-            <p class="uppercase text-2xl tracking-normal font-barlow-condensed pb-6">
+        class="py-6 md:py-16 md:full md:mx-auto overflow-hidden bg-transparent w-full flex flex-col justify-center items-center text-white">
+        <div class="technology flex flex-col items-center text-center md:w-full">
+            <p class="uppercase text-2xl tracking-normal font-barlow-condensed pb-6 self-start pl-8">
                 <span class="font-bold text-lg text-white/50 pr-4">03</span>space launch 101
             </p>
 
             <!-- Imagen -->
-            <picture class="pt-12">
+            <picture class="pt-12 w-full">
                 <!-- Landscape solo en tablets -->
                 <source id="tech-img-webp" media="(min-width: 768px) and (max-width: 1023px)"
                     srcset="../assets/technology/image-launch-vehicle-landscape.jpg">
             
                 <!-- Portrait para mobile y desktop -->
                 <img id="tech-img" src="../assets/technology/image-launch-vehicle-portrait.jpg" alt="Launch Vehicle"
-                    class="w-full max-w-md mx-auto">
+                    class="w-full  mx-auto">
             </picture>
         
             <!-- Número de navegación -->
@@ -159,7 +159,8 @@ bg-no-repeat bg-cover bg-center overflow-x-hidden lg:flex lg:flex-col lg:justify
     
     </main>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-    <script src="../script.js"></script>
+    <script src="/public/js/common.js"></script>
+    <script src="/public/js/technology.js"></script>
     </body>
     
     </html>

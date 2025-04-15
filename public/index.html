@@ -70,7 +70,7 @@ lg:bg-[url('/public/assets/home/background-home-desktop.jpg')]   bg-no-repeat bg
                           </span> Home</a>
                     </li>
                     <li class="me-2 border-r-2 md:border-r-0 border-transparent hover:border-white cursor-pointer relative group ml-8 md:after:absolute md:after:-bottom-8 md:after:left-1/2 md:after:-translate-x-1/2 md:after:h-[3px] md:after:w-full md:after:bg-transparent md:after:transition-colors md:after:duration-300 hover:md:after:bg-gray-400 [aria-current='page']:after:bg-white">
-                        <a href="/public/destination/destination-moon.html" class="flex items-center gap-x-2">
+                        <a href="/public/destination/destination.html" class="flex items-center gap-x-2">
                           <span class="font-bold">
                             01
                           </span> Destination</a>
@@ -92,26 +92,26 @@ lg:bg-[url('/public/assets/home/background-home-desktop.jpg')]   bg-no-repeat bg
         </div>
     </nav>
   </header>
-  <main class="px-6 md:py-16 md:w-5/6 md:mx-auto overflow-hidden">
+  <main class="px-6 py-32 md:flex md:flex-col md:w-5/6 md:mx-auto md:justify-start md:items-start md:h-screen overflow-hidden">
     <div class="hero text-white flex flex-col justify-center items-center
     lg:flex-row">
       <div class="hero-text text-center lg:text-start">
         <h1 class="font-barlow-condensed text-xl tracking-[4px] uppercase">So, you want to travel to
-          <span class="block py-4 font-bellefair text-[clamp(6rem,10vw,9rem)] tracking-normal">Space</span>
+          <span class="block py-4 md:py-6 font-bellefair text-[clamp(6rem,10vw,9rem)] tracking-normal">Space</span>
         </h1>
         <p class="text-newblue-300 font-barlow lg:w-3/5">Let’s face it; if you want to go to space, you might as well genuinely go to 
         outer space and not hover kind of on the edge of it. Well sit back, and relax 
         because we’ll give you a truly out of this world experience!</p>
       </div>
-      <div class="hero-cta pt-12 lg:pt-0">
+      <div class="hero-cta pt-12 md:pt-24 lg:pt-0">
         <!-- se quito public para vercel /public -->
-        <a href="/public/destination/destination-moon.html">
+        <a href="/public/destination/destination.html">
           <button class="uppercase border-transparent text-black bg-white size-40 lg:size-60 xl:size-70 rounded-full text-2xl  transition-all duration-300 hover:shadow-[0_0_60px_20px_rgba(255,255,255,0.4)] cursor-pointer font-bellefair">Explore</button>
         </a>
       </div>
     </div>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-  <script src="script.js"></script>
+  <script src="/public/js/common.js"></script>
 </body>
 </html>
