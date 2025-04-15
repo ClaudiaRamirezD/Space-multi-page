@@ -22,7 +22,7 @@
 bg-[url('../assets/destination/background-destination-mobile.jpg')] 
 md:bg-[url('../assets/destination/background-destination-tablet.jpg')] 
 lg:bg-[url('../assets/destination/background-destination-desktop.jpg')] 
-bg-no-repeat bg-cover bg-center overflow-x-hidden lg:flex lg:flex-col lg:justify-between">
+bg-no-repeat bg-cover bg-center overflow-x-hidden lg:flex lg:flex-col lg:justify-between lg:min-h-screen">
 
   <header>
     <nav class="text-white font-barlow-condensed text-base">
@@ -116,46 +116,46 @@ bg-no-repeat bg-cover bg-center overflow-x-hidden lg:flex lg:flex-col lg:justify
     </nav>
   </header>
 
-  <main class="p-6 md:py-16 md:w-5/6 md:mx-auto overflow-hidden bg-transparent w-full flex flex-col justify-center items-center text-white">
+  <main class="p-6 md:py-16 lg:py-0 md:w-5/6 md:mx-auto overflow-hidden bg-transparent w-full flex flex-col justify-center items-center text-white lg:flex-row lg:flex-1">
     <div class="pic-destination flex flex-col md:w-full md:items-center">
       <p class="uppercase text-2xl tracking-normal font-barlow-condensed md:self-start"><span class=" font-bold text-lg text-white/50 pr-4">01</span> pick your destination</p>
       <picture>
         <source srcset="../assets/destination/image-moon.webp">
-        <img src="../assets/destination/image-moon.png" alt="Full moon image" class="size-56 my-8 md:my-12">
+        <img src="../assets/destination/image-moon.png" alt="Full moon image" class="size-56 lg:size-76 my-8 md:my-12 lg:my-0">
       </picture>
 
     </div>
-    <div class="info-dest flex flex-col items-center justify-center w-5/6">
-      <ul class="uppercase flex justify-evenly font-barlow-condensed text-base tracking-widest text-newblue-300 md:py-8">
+    <div class="info-dest flex flex-col items-center justify-center w-5/6 lg:items-start">
+      <ul class="uppercase flex justify-evenly lg:justify-start font-barlow-condensed text-base tracking-widest text-newblue-300 md:py-8 lg:gap-8">
         <li
-          class="me-2  border-transparent hover:border-white cursor-pointer relative group ml-8 after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:h-[3px] after:w-full after:bg-transparent after:transition-colors after:duration-300 hover:after:bg-gray-400 [aria-current='page']:after:bg-white">
+          class="me-2  border-transparent hover:border-white cursor-pointer relative group ml-8 lg:ml-0 after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:h-[3px] after:w-full after:bg-transparent after:transition-colors after:duration-300 hover:after:bg-gray-400 [aria-current='page']:after:bg-white">
           <a href="./destination.html?planet=moon">moon</a>
         </li>
         <li
-          class="me-2  border-transparent hover:border-white cursor-pointer relative group ml-8 after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:h-[3px] after:w-full after:bg-transparent after:transition-colors after:duration-300 hover:after:bg-gray-400 [aria-current='page']:after:bg-white">
+          class="me-2  border-transparent hover:border-white cursor-pointer relative group ml-8 lg:ml-0 after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:h-[3px] after:w-full after:bg-transparent after:transition-colors after:duration-300 hover:after:bg-gray-400 [aria-current='page']:after:bg-white">
           <a href="./destination.html?planet=mars">mars</a>
         </li>
         <li
-          class="me-2  border-transparent hover:border-white cursor-pointer relative group ml-8 after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:h-[3px] after:w-full after:bg-transparent after:transition-colors after:duration-300 hover:after:bg-gray-400 [aria-current='page']:after:bg-white">
+          class="me-2  border-transparent hover:border-white cursor-pointer relative group ml-8 lg:ml-0 after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:h-[3px] after:w-full after:bg-transparent after:transition-colors after:duration-300 hover:after:bg-gray-400 [aria-current='page']:after:bg-white">
           <a href="./destination.html?planet=europa">europa</a>
         </li>
         <li
-          class="me-2  border-transparent hover:border-white cursor-pointer relative group ml-8 after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:h-[3px] after:w-full after:bg-transparent after:transition-colors after:duration-300 hover:after:bg-gray-400 [aria-current='page']:after:bg-white">
+          class="me-2  border-transparent hover:border-white cursor-pointer relative group ml-8 lg:ml-0 after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:h-[3px] after:w-full after:bg-transparent after:transition-colors after:duration-300 hover:after:bg-gray-400 [aria-current='page']:after:bg-white">
           <a href="./destination.html?planet=titan">titan</a>
         </li>
       </ul>
 
       <h2 class="uppercase text-center font-bellefair text-6xl py-10">moon</h2>
-      <p class="text-center text-newblue-300 font-barlow text-lg leading-[180%] pb-6">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come
+      <p class="text-center lg:text-start text-newblue-300 font-barlow text-lg leading-[180%] pb-6">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come
         back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
       <hr class="text-white/50 w-full">
 
-      <div class="distance-time uppercase flex flex-col md:flex-row md:justify-between text-center py-6 font-barlow-condensed text-base tracking-wide gap-4 w-full">
+      <div class="distance-time uppercase flex flex-col md:flex-row md:justify-between lg:justify-start lg:gap-22 text-center lg:text-start py-6 font-barlow-condensed text-base tracking-wide gap-4 w-full">
         <div class="avg-distance text-white/50">
-          <p>avg. distance <span class="block text-white font-bellefair text-3xl">384,400 km</span></p>
+          <p>avg. distance <span class="block text-white font-bellefair text-3xl lg:pt-4">384,400 km</span></p>
         </div>
         <div class="avg-distance text-white/50">
-          <p>est. travel time<span class="block text-white font-bellefair text-3xl">3 days</span></p>
+          <p>est. travel time<span class="block text-white font-bellefair text-3xl lg:pt-4">3 days</span></p>
         </div>
       </div>
     </div>
