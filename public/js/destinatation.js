@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (picture) {
         picture.innerHTML = `
             <source srcset="${data.image.webp}">
-            <img src="${data.image.png}" alt="${data.name}" class="size-56 lg:size-76 my-8 md:my-12 md:my-0" />
+            <img src="${data.image.png}" alt="${data.name}" class="size-56 lg:size-76 my-8 md:my-12" />
         `;
 }
 
