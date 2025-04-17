@@ -34,9 +34,9 @@ function updateTech(index) {
 
     techName.textContent = tech.name.toLowerCase();
     techDesc.textContent = tech.description;
-    techImg.src = `../assets/technology/${tech.image}-portrait.jpg`;
+    techImg.src = `/assets/technology/${tech.image}-portrait.jpg`;
     techImg.alt = tech.name;
-    techImgWebp.srcset = `../assets/technology/${tech.image}-landscape.jpg`;
+    techImgWebp.srcset = `/assets/technology/${tech.image}-landscape.jpg`;
 
     techBtns.forEach((btn, i) => {
     btn.classList.remove("bg-white", "text-black");

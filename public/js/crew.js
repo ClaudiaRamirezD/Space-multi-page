@@ -42,8 +42,8 @@ function updateCrew(index) {
     role.textContent = member.role.toLowerCase();
     name.textContent = member.name.toLowerCase();
     bio.textContent = member.bio;
-    img.src = `../assets/crew/${member.image}.png`;
-    imgWebp.srcset = `../assets/crew/${member.image}.webp`;
+    img.src = `/assets/crew/${member.image}.png`;
+    imgWebp.srcset = `/assets/crew/${member.image}.webp`;
 
     dots.forEach((d, i) => {
         d.classList.remove("bg-white");

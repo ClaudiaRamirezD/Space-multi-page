@@ -11,7 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="../css/output.css">
+  <link rel="stylesheet" href="/css/output.css">
 
   <title>Frontend Mentor | Space tourism website</title>
 </head>
@@ -19,9 +19,9 @@
 <!-- RECORDAR QUITAR .. ANTES DE PUSH -->
 
 <body class="text-lg 
-bg-[url('../assets/crew/background-crew-mobile.jpg')] 
-md:bg-[url('../assets/crew/background-crew-tablet.jpg')] 
-lg:bg-[url('../assets/crew/background-crew-desktop.jpg')] 
+bg-[url('/assets/crew/background-crew-mobile.jpg')] 
+md:bg-[url('/assets/crew/background-crew-tablet.jpg')] 
+lg:bg-[url('/assets/crew/background-crew-desktop.jpg')] 
 bg-no-repeat bg-cover bg-center overflow-x-hidden lg:flex lg:flex-col lg:h-screen">
 
   <header>
@@ -84,28 +84,28 @@ bg-no-repeat bg-cover bg-center overflow-x-hidden lg:flex lg:flex-col lg:h-scree
             class="flex flex-col font-medium md:flex-row md:space-x-8 uppercase text-base font-barlow-condensed tracking-widest gap-8 w-full mt-12 md:mt-0 md:pr-6 md:pl-6 lg:pr-10 lg:pl-16">
             <li
               class="me-2 border-r-2 md:border-r-0 border-transparent hover:border-white cursor-pointer relative group ml-8 md:after:absolute md:after:-bottom-8 md:after:left-1/2 md:after:-translate-x-1/2 md:after:h-[3px] md:after:w-full md:after:bg-transparent md:after:transition-colors md:after:duration-300 hover:md:after:bg-gray-400 [aria-current='page']:after:bg-white">
-              <a href="/public/index.html" class="flex items-center gap-x-2 text-white active">
+              <a href="/index.html" class="flex items-center gap-x-2 text-white active">
                 <span class="font-bold md:hidden lg:block">
                   00
                 </span> Home</a>
             </li>
             <li
               class="me-2 border-r-2 md:border-r-0 border-transparent hover:border-white cursor-pointer relative group ml-8 md:after:absolute md:after:-bottom-8 md:after:left-1/2 md:after:-translate-x-1/2 md:after:h-[3px] md:after:w-full md:after:bg-transparent md:after:transition-colors md:after:duration-300 hover:md:after:bg-gray-400 [aria-current='page']:after:bg-white">
-              <a href="../destination/destination.html" class="flex items-center gap-x-2">
+              <a href="/destination/destination.html" class="flex items-center gap-x-2">
                 <span class="font-bold">
                   01
                 </span> Destination</a>
             </li>
             <li
               class="me-2 border-r-2 md:border-r-0 border-transparent hover:border-white cursor-pointer relative group ml-8 md:after:absolute md:after:-bottom-8 md:after:left-1/2 md:after:-translate-x-1/2 md:after:h-[3px] md:after:w-full md:after:bg-transparent md:after:transition-colors md:after:duration-300 hover:md:after:bg-gray-400 [aria-current='page']:after:bg-white">
-              <a href="../crew/crew-commander.html" class="flex items-center gap-x-2">
+              <a href="/crew/crew-commander.html" class="flex items-center gap-x-2">
                 <span class="font-bold">
                   02
                 </span> Crew</a>
             </li>
             <li
               class="me-2 border-r-2 md:border-r-0 border-transparent hover:border-white cursor-pointer relative group ml-8 md:after:absolute md:after:-bottom-8 md:after:left-1/2 md:after:-translate-x-1/2 md:after:h-[3px] md:after:w-full md:after:bg-transparent md:after:transition-colors md:after:duration-300 hover:md:after:bg-gray-400 [aria-current='page']:after:bg-white">
-              <a href="../technology/technology-vehicle.html" class="flex items-center gap-x-2">
+              <a href="/technology/technology-vehicle.html" class="flex items-center gap-x-2">
                 <span class="font-bold">
                   03
                 </span> Technology</a>
@@ -148,15 +148,15 @@ bg-no-repeat bg-cover bg-center overflow-x-hidden lg:flex lg:flex-col lg:h-scree
       <!-- Image -->
       <picture class="lg:flex-1">
         <source id="crew-img-webp" srcset="../assets/crew/image-douglas-hurley.webp" />
-        <img id="crew-img" src="../assets/crew/image-douglas-hurley.png" alt=""
+        <img id="crew-img" src="/assets/crew/image-douglas-hurley.png" alt=""
           class="w-3/5 mx-auto pt-14 pb-8 lg:pt-0 lg:pb-0 [mask-image:linear-gradient(to_top,transparent,black)]">
       </picture>
     </div>
 
   </main>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-  <script src="/public/js/common.js"></script>
-  <script src="/public/js/crew.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/crew.js"></script>
 </body>
 
 </html>
