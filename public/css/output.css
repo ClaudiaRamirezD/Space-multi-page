@@ -7,8 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-500: oklch(76.9% 0.188 70.08);
-    --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-600: oklch(44.6% 0.03 256.802);
@@ -16,7 +14,6 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --container-md: 28rem;
     --container-xl: 36rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
@@ -225,9 +222,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
@@ -273,13 +267,6 @@
   .inline-flex {
     display: inline-flex;
   }
-  .table {
-    display: table;
-  }
-  .size-4 {
-    width: calc(var(--spacing) * 4);
-    height: calc(var(--spacing) * 4);
-  }
   .size-10 {
     width: calc(var(--spacing) * 10);
     height: calc(var(--spacing) * 10);
@@ -298,29 +285,14 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
-  .h-10 {
-    height: calc(var(--spacing) * 10);
-  }
   .h-full {
     height: 100%;
-  }
-  .h-screen {
-    height: 100vh;
-  }
-  .max-h-\[80vh\] {
-    max-height: 80vh;
   }
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/3 {
     width: calc(1/3 * 100%);
-  }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
   }
   .w-3\/4 {
     width: calc(3/4 * 100%);
@@ -331,17 +303,11 @@
   .w-4 {
     width: calc(var(--spacing) * 4);
   }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
-  }
   .w-5\/6 {
     width: calc(5/6 * 100%);
   }
   .w-6 {
     width: calc(var(--spacing) * 6);
-  }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
   }
   .w-full {
     width: 100%;
@@ -355,13 +321,6 @@
   .flex-grow {
     flex-grow: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -371,9 +330,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -462,17 +418,8 @@
       border-color: color-mix(in oklab, var(--color-white) 50%, transparent);
     }
   }
-  .bg-amber-500 {
-    background-color: var(--color-amber-500);
-  }
-  .bg-amber-600 {
-    background-color: var(--color-amber-600);
-  }
   .bg-gray-400 {
     background-color: var(--color-gray-400);
-  }
-  .bg-newblue-900 {
-    background-color: var(--color-newblue-900);
   }
   .bg-newblue-900\/20 {
     background-color: color-mix(in srgb, hsl(230, 35%, 7%) 20%, transparent);
@@ -492,17 +439,17 @@
       background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
     }
   }
-  .bg-\[url\(\'\.\.\/assets\/crew\/background-crew-mobile\.jpg\'\)\] {
-    background-image: url('../assets/crew/background-crew-mobile.jpg');
+  .bg-\[url\(\'\/assets\/crew\/background-crew-mobile\.jpg\'\)\] {
+    background-image: url('/assets/crew/background-crew-mobile.jpg');
   }
-  .bg-\[url\(\'\.\.\/assets\/destination\/background-destination-mobile\.jpg\'\)\] {
-    background-image: url('../assets/destination/background-destination-mobile.jpg');
+  .bg-\[url\(\'\/assets\/destination\/background-destination-mobile\.jpg\'\)\] {
+    background-image: url('/assets/destination/background-destination-mobile.jpg');
   }
-  .bg-\[url\(\'\.\.\/assets\/technology\/background-technology-mobile\.jpg\'\)\] {
-    background-image: url('../assets/technology/background-technology-mobile.jpg');
+  .bg-\[url\(\'\/assets\/home\/background-home-mobile\.jpg\'\)\] {
+    background-image: url('/assets/home/background-home-mobile.jpg');
   }
-  .bg-\[url\(\'\/public\/assets\/home\/background-home-mobile\.jpg\'\)\] {
-    background-image: url('/public/assets/home/background-home-mobile.jpg');
+  .bg-\[url\(\'\/assets\/technology\/background-technology-mobile\.jpg\'\)\] {
+    background-image: url('/assets/technology/background-technology-mobile.jpg');
   }
   .\[mask-image\:linear-gradient\(to_top\,transparent\,black\)\] {
     mask-image: linear-gradient(to top,transparent,black);
@@ -515,9 +462,6 @@
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
-  }
-  .object-contain {
-    object-fit: contain;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -663,19 +607,8 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .backdrop-blur-xl {
     --tw-backdrop-blur: blur(var(--blur-xl));
-    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-  }
-  .backdrop-filter {
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
@@ -844,28 +777,10 @@
       display: none;
     }
   }
-  .md\:size-1 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 1);
-      height: calc(var(--spacing) * 1);
-    }
-  }
-  .md\:size-13 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 13);
-      height: calc(var(--spacing) * 13);
-    }
-  }
   .md\:size-16 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 16);
       height: calc(var(--spacing) * 16);
-    }
-  }
-  .md\:size-18 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 18);
-      height: calc(var(--spacing) * 18);
     }
   }
   .md\:w-5\/6 {
@@ -933,24 +848,24 @@
       border-right-width: 0px;
     }
   }
-  .md\:bg-\[url\(\'\.\.\/assets\/crew\/background-crew-tablet\.jpg\'\)\] {
+  .md\:bg-\[url\(\'\/assets\/crew\/background-crew-tablet\.jpg\'\)\] {
     @media (width >= 48rem) {
-      background-image: url('../assets/crew/background-crew-tablet.jpg');
+      background-image: url('/assets/crew/background-crew-tablet.jpg');
     }
   }
-  .md\:bg-\[url\(\'\.\.\/assets\/destination\/background-destination-tablet\.jpg\'\)\] {
+  .md\:bg-\[url\(\'\/assets\/destination\/background-destination-tablet\.jpg\'\)\] {
     @media (width >= 48rem) {
-      background-image: url('../assets/destination/background-destination-tablet.jpg');
+      background-image: url('/assets/destination/background-destination-tablet.jpg');
     }
   }
-  .md\:bg-\[url\(\'\.\.\/assets\/technology\/background-technology-tablet\.jpg\'\)\] {
+  .md\:bg-\[url\(\'\/assets\/home\/background-home-tablet\.jpg\'\)\] {
     @media (width >= 48rem) {
-      background-image: url('../assets/technology/background-technology-tablet.jpg');
+      background-image: url('/assets/home/background-home-tablet.jpg');
     }
   }
-  .md\:bg-\[url\(\'\/public\/assets\/home\/background-home-tablet\.jpg\'\)\] {
+  .md\:bg-\[url\(\'\/assets\/technology\/background-technology-tablet\.jpg\'\)\] {
     @media (width >= 48rem) {
-      background-image: url('/public/assets/home/background-home-tablet.jpg');
+      background-image: url('/assets/technology/background-technology-tablet.jpg');
     }
   }
   .md\:p-0 {
@@ -988,11 +903,6 @@
       padding-top: calc(var(--spacing) * 4);
     }
   }
-  .md\:pt-14 {
-    @media (width >= 48rem) {
-      padding-top: calc(var(--spacing) * 14);
-    }
-  }
   .md\:pt-24 {
     @media (width >= 48rem) {
       padding-top: calc(var(--spacing) * 24);
@@ -1016,18 +926,6 @@
   .md\:pl-8 {
     @media (width >= 48rem) {
       padding-left: calc(var(--spacing) * 8);
-    }
-  }
-  .md\:text-2xl {
-    @media (width >= 48rem) {
-      font-size: var(--text-2xl);
-      line-height: var(--tw-leading, var(--text-2xl--line-height));
-    }
-  }
-  .md\:text-xl {
-    @media (width >= 48rem) {
-      font-size: var(--text-xl);
-      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .md\:after\:absolute {
@@ -1155,31 +1053,6 @@
       height: calc(var(--spacing) * 76);
     }
   }
-  .lg\:h-64 {
-    @media (width >= 64rem) {
-      height: calc(var(--spacing) * 64);
-    }
-  }
-  .lg\:h-80 {
-    @media (width >= 64rem) {
-      height: calc(var(--spacing) * 80);
-    }
-  }
-  .lg\:h-96 {
-    @media (width >= 64rem) {
-      height: calc(var(--spacing) * 96);
-    }
-  }
-  .lg\:h-\[50\%\] {
-    @media (width >= 64rem) {
-      height: 50%;
-    }
-  }
-  .lg\:h-\[80\%\] {
-    @media (width >= 64rem) {
-      height: 80%;
-    }
-  }
   .lg\:h-full {
     @media (width >= 64rem) {
       height: 100%;
@@ -1188,21 +1061,6 @@
   .lg\:h-screen {
     @media (width >= 64rem) {
       height: 100vh;
-    }
-  }
-  .lg\:max-h-\[50vh\] {
-    @media (width >= 64rem) {
-      max-height: 50vh;
-    }
-  }
-  .lg\:max-h-\[60vh\] {
-    @media (width >= 64rem) {
-      max-height: 60vh;
-    }
-  }
-  .lg\:max-h-\[70vh\] {
-    @media (width >= 64rem) {
-      max-height: 70vh;
     }
   }
   .lg\:max-h-\[80vh\] {
@@ -1220,19 +1078,9 @@
       width: calc(3/5 * 100%);
     }
   }
-  .lg\:w-auto {
-    @media (width >= 64rem) {
-      width: auto;
-    }
-  }
   .lg\:w-full {
     @media (width >= 64rem) {
       width: 100%;
-    }
-  }
-  .lg\:max-w-md {
-    @media (width >= 64rem) {
-      max-width: var(--container-md);
     }
   }
   .lg\:flex-1 {
@@ -1280,11 +1128,6 @@
       gap: calc(var(--spacing) * 2);
     }
   }
-  .lg\:gap-4 {
-    @media (width >= 64rem) {
-      gap: calc(var(--spacing) * 4);
-    }
-  }
   .lg\:gap-6 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 6);
@@ -1300,11 +1143,6 @@
       gap: calc(var(--spacing) * 9);
     }
   }
-  .lg\:gap-10 {
-    @media (width >= 64rem) {
-      gap: calc(var(--spacing) * 10);
-    }
-  }
   .lg\:gap-22 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 22);
@@ -1315,29 +1153,24 @@
       align-self: flex-end;
     }
   }
-  .lg\:self-start {
+  .lg\:bg-\[url\(\'\/assets\/crew\/background-crew-desktop\.jpg\'\)\] {
     @media (width >= 64rem) {
-      align-self: flex-start;
+      background-image: url('/assets/crew/background-crew-desktop.jpg');
     }
   }
-  .lg\:bg-\[url\(\'\.\.\/assets\/crew\/background-crew-desktop\.jpg\'\)\] {
+  .lg\:bg-\[url\(\'\/assets\/destination\/background-destination-desktop\.jpg\'\)\] {
     @media (width >= 64rem) {
-      background-image: url('../assets/crew/background-crew-desktop.jpg');
+      background-image: url('/assets/destination/background-destination-desktop.jpg');
     }
   }
-  .lg\:bg-\[url\(\'\.\.\/assets\/destination\/background-destination-desktop\.jpg\'\)\] {
+  .lg\:bg-\[url\(\'\/assets\/home\/background-home-desktop\.jpg\'\)\] {
     @media (width >= 64rem) {
-      background-image: url('../assets/destination/background-destination-desktop.jpg');
+      background-image: url('/assets/home/background-home-desktop.jpg');
     }
   }
-  .lg\:bg-\[url\(\'\.\.\/assets\/technology\/background-technology-desktop\.jpg\'\)\] {
+  .lg\:bg-\[url\(\'\/assets\/technology\/background-technology-desktop\.jpg\'\)\] {
     @media (width >= 64rem) {
-      background-image: url('../assets/technology/background-technology-desktop.jpg');
-    }
-  }
-  .lg\:bg-\[url\(\'\/public\/assets\/home\/background-home-desktop\.jpg\'\)\] {
-    @media (width >= 64rem) {
-      background-image: url('/public/assets/home/background-home-desktop.jpg');
+      background-image: url('/assets/technology/background-technology-desktop.jpg');
     }
   }
   .lg\:px-0 {
@@ -1405,11 +1238,6 @@
       padding-bottom: calc(var(--spacing) * 4);
     }
   }
-  .lg\:pb-8 {
-    @media (width >= 64rem) {
-      padding-bottom: calc(var(--spacing) * 8);
-    }
-  }
   .lg\:pl-14 {
     @media (width >= 64rem) {
       padding-left: calc(var(--spacing) * 14);
@@ -1469,44 +1297,14 @@
       margin-block: auto;
     }
   }
-  .\32 xl\:h-\[100\%\] {
-    @media (width >= 96rem) {
-      height: 100%;
-    }
-  }
   .\32 xl\:h-full {
     @media (width >= 96rem) {
       height: 100%;
     }
   }
-  .\32 xl\:h-screen {
-    @media (width >= 96rem) {
-      height: 100vh;
-    }
-  }
-  .\32 xl\:max-h-\[40vh\] {
-    @media (width >= 96rem) {
-      max-height: 40vh;
-    }
-  }
   .\32 xl\:max-h-\[70vh\] {
     @media (width >= 96rem) {
       max-height: 70vh;
-    }
-  }
-  .\32 xl\:max-h-\[80vh\] {
-    @media (width >= 96rem) {
-      max-height: 80vh;
-    }
-  }
-  .\32 xl\:max-h-svh {
-    @media (width >= 96rem) {
-      max-height: 100svh;
-    }
-  }
-  .\32 xl\:min-h-screen {
-    @media (width >= 96rem) {
-      min-height: 100vh;
     }
   }
   .\32 xl\:w-1\/2 {
@@ -1522,11 +1320,6 @@
   .\32 xl\:justify-center {
     @media (width >= 96rem) {
       justify-content: center;
-    }
-  }
-  .\32 xl\:justify-start {
-    @media (width >= 96rem) {
-      justify-content: flex-start;
     }
   }
   .\32 xl\:gap-10 {
@@ -1639,11 +1432,6 @@
 @property --tw-tracking {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-backdrop-blur {
   syntax: "*";
@@ -1775,7 +1563,6 @@
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
       --tw-backdrop-blur: initial;
       --tw-backdrop-brightness: initial;
       --tw-backdrop-contrast: initial;
